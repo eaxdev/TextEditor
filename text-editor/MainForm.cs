@@ -28,7 +28,7 @@ namespace text_editor
             btnSave.Click += butSave_Click;
             fldContent.TextChanged += fldContent_TextChanged;
         }
-
+        #region Проброс событий
         private void butOpenFile_Click(object sender, EventArgs e)
         {
             if (FileOpenClick != null)
@@ -52,6 +52,9 @@ namespace text_editor
                 ContentChanged(this, EventArgs.Empty);
             }
         }
+        #endregion
+
+        #region Реализация интерфейса IMainForm
         public string FilePath
         {
             get { return fldFilePath.Text; } 
@@ -72,5 +75,22 @@ namespace text_editor
         public event EventHandler FileOpenClick;
         public event EventHandler FileSaveClick;
         public event EventHandler ContentChanged;
+        #endregion
+
+        #region Обработчик клика на кнопку "Выбрать файл"
+        private void butSelectFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.Filter = "Текстовые файлы|*.txt|Все файлы|*.*";
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                fldFilePath.Text = dlg.FileName;
+                if (FileOpenClick != null) FileOpenClick(this, EventArgs.Empty);
+            }
+        }
+        #endregion
+
+
     }
 }
