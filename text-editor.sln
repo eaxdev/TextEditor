@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "text-editor", "text-editor\text-editor.csproj", "{2F5B1F8A-AFE1-4AF1-8C8F-146DA494F476}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditor.BL", "TextEditor.BL\TextEditor.BL.csproj", "{D68B7808-B601-45DE-AC93-C82FD6263FDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2F5B1F8A-AFE1-4AF1-8C8F-146DA494F476}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F5B1F8A-AFE1-4AF1-8C8F-146DA494F476}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F5B1F8A-AFE1-4AF1-8C8F-146DA494F476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68B7808-B601-45DE-AC93-C82FD6263FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68B7808-B601-45DE-AC93-C82FD6263FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68B7808-B601-45DE-AC93-C82FD6263FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68B7808-B601-45DE-AC93-C82FD6263FDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
