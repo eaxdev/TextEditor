@@ -7,7 +7,13 @@ using System.Windows.Forms;
 
 namespace text_editor
 {
-    class MessageService
+    public interface IMessageService
+    {
+        void ShowMessage(string message);
+        void ShowExclamation(string exclamation);
+        void ShowError(string error);
+    }
+    class MessageService: IMessageService
     {
         public void ShowMessage(string message)
         {
