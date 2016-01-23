@@ -21,7 +21,7 @@ namespace text_editor
             MessageService service = new MessageService();
             FileManager manager = new FileManager();
             MainPresenter presenter = new MainPresenter(form, manager, service);
-            Application.Run(new MainForm());
+            Application.Run(form);
         }
     }
 }
