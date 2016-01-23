@@ -70,7 +70,6 @@
             this.butSelectFile.TabIndex = 2;
             this.butSelectFile.Text = "Выбрать";
             this.butSelectFile.UseVisualStyleBackColor = true;
-            this.butSelectFile.Click += new System.EventHandler(this.butSelectFile_Click);
             // 
             // butOpenFile
             // 

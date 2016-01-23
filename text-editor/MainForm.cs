@@ -27,6 +27,8 @@ namespace text_editor
             butOpenFile.Click += new EventHandler(butOpenFile_Click);
             btnSave.Click += butSave_Click;
             fldContent.TextChanged += fldContent_TextChanged;
+            butSelectFile.Click += butSelectFile_Click;
+            numFont.ValueChanged += numFont_ValueChanged;
         }
         #region Проброс событий
         private void butOpenFile_Click(object sender, EventArgs e)
@@ -91,6 +93,11 @@ namespace text_editor
         }
         #endregion
 
-
+        #region Обработчик выбора шрифта
+        private void numFont_ValueChanged(object sender, EventArgs e)
+        {
+            fldContent.Font = new Font("Calibri", (float)numFont.Value);
+        }
+        #endregion
     }
 }
