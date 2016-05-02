@@ -1,5 +1,6 @@
 # TextEditor
 Simple Text Editor
+
 This is a simple text editor written in C # using the MVP pattern
 
 Main functions:
